@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping package="com.ksganesh.demo.hibernate.basic.model">
+        
+        	<class name="Person" table="PERSON">
+        		<id name="id" column="PERSON_ID">
+        				<generator class="increment"/>
+        		</id>
+        		<property name="name"></property>
+ 		        <property name="birthDate" type="timestamp" column="BIRTH_DATE"/>
+        		
+        	</class>
+        	
+        </hibernate-mapping>
